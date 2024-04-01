@@ -3,29 +3,70 @@
 @tailwind utilities;
 
 @layer base {
-    .bg {
-        background-image: url('/images/elephant.svg'), url('/images/bg_bl.svg'), url('/images/bg_bt.svg');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    }
-
     .bg-sm {
-        background-position: top left, bottom -44px right -429px, center center;
+        background-position: top left, bottom -44px right -429px, center, center;
     }
 
     .bg-md {
-        background-position: top left, bottom -44px right -342px, top 108px right 99px;
+        background-position: top left, bottom -44px right -342px, top 108px right 99px, center;
+    }
+
+    .list-style-marker {
+        background: url("/images/main_list_marker.svg") no-repeat left center;
+        padding-left: 15px;
     }
 }
 
 html {
+    @apply w-full h-full bg-sm md:bg-md;
+    font-family: Inter, sans-serif;
+    background-image: url('/images/elephant.svg'), url('/images/bg_bl.svg'), url('/images/bg_bt.svg'), linear-gradient(to bottom, #9AF0FF, #53A2BE);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
     body {
-        @apply w-full bg-gradient-to-b from-[#9AF0FF] to-[#53A2BE];
+        @apply w-full h-full font-normal;
 
         #__nuxt {
-            @apply h-dvh bg bg-sm md:bg-md flex flex-col justify-between;
+            @apply h-full flex flex-col justify-between;
+
             main {
                 @apply flex-grow;
+
+                .main-list {
+                    @apply italic text-[22px] font-thin text-[#2777D4];
+
+                    li {
+                        @apply xl:list-style-marker;
+                        strong {
+                            @apply font-extrabold;
+                        }
+
+                    }
+                }
+            }
+
+            .nuxt-icon {
+                display: flex;
+
+                svg {
+                    width: initial;
+                    height: initial;
+                    margin-bottom: initial;
+                    vertical-align: initial;
+                }
+            }
+
+            footer {
+                .footer-contacts-list {
+                    @apply flex flex-col gap-5;
+                    a {
+                        @apply flex gap-2 items-start;
+                        svg {
+                            @apply -mt-0.5
+                        }
+                    }
+                }
             }
         }
     }
