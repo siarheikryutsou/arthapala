@@ -4,7 +4,7 @@
 
 @layer base {
     .bg {
-        background-image: url('/images/elephant.svg'), url('/images/bg_bl.svg'), url('/images/bg_bt.svg');
+        background-image: url('/elephant.svg'), url('/bg_bl.svg'), url('/bg_bt.svg');
         background-repeat: no-repeat;
         background-attachment: fixed;
     }
@@ -23,8 +23,10 @@ html {
         @apply w-full bg-gradient-to-b from-[#9AF0FF] to-[#53A2BE];
 
         #__nuxt {
-            @apply h-dvh bg bg-sm md:bg-md;
-
+            @apply h-dvh bg bg-sm md:bg-md flex flex-col justify-between;
+            main {
+                @apply flex-grow;
+            }
         }
     }
 }
