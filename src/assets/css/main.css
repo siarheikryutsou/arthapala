@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .bg {
+        background-image: url('/images/elephant.svg'), url('/images/bg_bl.svg'), url('/images/bg_bt.svg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .bg-sm {
+        background-position: top left, bottom -44px right -429px, center center;
+    }
+
+    .bg-md {
+        background-position: top left, bottom -44px right -342px, top 108px right 99px;
+    }
+}
+
+html {
+    body {
+        @apply w-full bg-gradient-to-b from-[#9AF0FF] to-[#53A2BE];
+
+        #__nuxt {
+            @apply h-dvh bg bg-sm md:bg-md;
+
+        }
+    }
+}

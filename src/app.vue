@@ -1,5 +1,4 @@
 <template>
-  <main>
-    <NuxtPage />
-  </main>
+  <Header />
+  <NuxtPage />
 </template>
