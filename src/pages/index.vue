@@ -4,7 +4,7 @@
 
 <template>
   <div class="max-w-[790px] mx-auto flex flex-col items-center">
-    <img class="hidden md:block mt-24" src="/images/logo.svg" alt="Logo">
+    <img class="hidden md:block mt-14" src="/images/logo.svg" alt="Logo">
     <h1 class="text-center text-white text-7xl font-bold mt-36 md:mt-6 max-w-[650px]">Custodial staking of Ethereum</h1>
 
     <div class="mt-72 md:mt-16 flex flex-col xl:flex-row justify-between gap-10 xl:gap-16">
