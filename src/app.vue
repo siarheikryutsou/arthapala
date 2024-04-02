@@ -5,7 +5,7 @@
 
     <nav class="flex gap-6">
       <a href="https://x.com/" target="_blank" aria-label="Read us on Twitter">
-        <nuxt-icon filled name="x" />
+        <nuxt-icon filled name="x" aria-label="Read us on Telegram" />
       </a>
       <a href="https://telegram.org/" target="_blank">
         <nuxt-icon filled name="tg" />

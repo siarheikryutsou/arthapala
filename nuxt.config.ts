@@ -14,7 +14,10 @@ export default defineNuxtConfig({
       title: "Arthapala",
       htmlAttrs: {
         lang: "en"
-      }
+      },
+      meta: [
+        { name: "description", content: "Custodial staking of Ethereum" }
+      ]
     }
   },
 
@@ -24,7 +27,7 @@ export default defineNuxtConfig({
       families: {
         Inter: [300, 400, 500, 700, 800]
       }
-    }],
+    }]
   ],
 
   postcss: {
