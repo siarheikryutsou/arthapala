@@ -11,7 +11,7 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: "Arthapala",
+      title: "Arthapāla — Custodial ETH Staking Service",
       htmlAttrs: {
         lang: "en"
       },
