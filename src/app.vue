@@ -4,10 +4,10 @@
     <img class="md:hidden" src="/images/logo_mobile.svg" alt="Logo" />
 
     <nav class="flex gap-6">
-      <a href="https://x.com/" target="_blank" aria-label="Read us on Twitter">
+<!--      <a class="color-transition" href="https://x.com/" target="_blank" aria-label="Read us on Twitter">
         <nuxt-icon filled name="x" />
-      </a>
-      <a href="https://t.me/Arthapala" target="_blank" aria-label="Read us on Telegram">
+      </a>-->
+      <a class="color-transition" href="https://t.me/Arthapala" target="_blank" aria-label="Read us on Telegram">
         <nuxt-icon filled name="tg" />
       </a>
     </nav>
@@ -17,7 +17,8 @@
     <NuxtPage />
   </main>
 
-  <footer class="py-6 px-6 md:px-20 text-white text-xs flex flex-col xl:flex-row xl:justify-between xl:items-end space-y-5 w-full">
+  <footer
+    class="py-6 px-6 md:px-20 text-white text-xs flex flex-col xl:flex-row xl:justify-between xl:items-end space-y-5 w-full">
     <nav class="mx-auto md:mx-0">
       <ul class="footer-contacts-list">
         <li class="">
@@ -36,7 +37,8 @@
     </nav>
 
     <nav>
-      <ul class="flex flex-col items-center gap-8 underline mt-16 md:mt-0 pb-0.5 text-sm md:text-xs md:flex-row md:items-start">
+      <ul
+        class="flex flex-col items-center gap-8 underline mt-16 md:mt-0 pb-0.5 text-sm md:text-xs md:flex-row md:items-start">
         <li>
           <nuxt-link to="/terms-and-conditions">Terms and Conditions</nuxt-link>
         </li>

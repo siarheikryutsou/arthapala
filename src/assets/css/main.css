@@ -15,6 +15,15 @@
         background: url("/images/main_list_marker.svg") no-repeat left center;
         padding-left: 15px;
     }
+
+    .color-transition {
+        @apply text-white md:hover:text-[#2777D4];
+        transition: color 150ms ease;
+
+        .color {
+            @apply fill-current;
+        }
+    }
 }
 
 html {
@@ -39,6 +48,7 @@ html {
 
                     li {
                         @apply xl:list-style-marker;
+
                         strong {
                             @apply font-extrabold;
                         }
@@ -58,11 +68,17 @@ html {
                 }
             }
 
+            header {
+
+            }
+
             footer {
                 .footer-contacts-list {
                     @apply flex flex-col gap-5;
+
                     a {
                         @apply flex gap-2 items-start;
+
                         svg {
                             @apply -mt-0.5
                         }
