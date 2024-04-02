@@ -5,9 +5,9 @@
 
     <nav class="flex gap-6">
       <a href="https://x.com/" target="_blank" aria-label="Read us on Twitter">
-        <nuxt-icon filled name="x" aria-label="Read us on Telegram" />
+        <nuxt-icon filled name="x" />
       </a>
-      <a href="https://telegram.org/" target="_blank">
+      <a href="https://t.me/Arthapala" target="_blank" aria-label="Read us on Telegram">
         <nuxt-icon filled name="tg" />
       </a>
     </nav>
@@ -29,7 +29,7 @@
         <li>
           <a href="https://maps.app.goo.gl/kdyzd4CcQ4ispkyy8" target="_blank" rel="noopener noreferrer">
             <nuxt-icon filled name="geo" />
-            <span>PARALELNÍ POLIS, z.s., Dělnická 475/43, 170 00 Praha 7 Holešovice</span>
+            <span>Postal address: <strong>Antala Staška 1859/34, Krč, 140 00 Praha</strong></span>
           </a>
         </li>
       </ul>

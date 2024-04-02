@@ -25,8 +25,11 @@ export default defineNuxtConfig({
     "nuxt-icons",
     ["@nuxtjs/google-fonts", {
       families: {
-        Inter: [300, 400, 500, 700, 800]
-      }
+        Inter: [300, 400, 500, 700, 800],
+        download: true,
+        inject: true,
+      },
+      display: "swap"
     }]
   ],
 
