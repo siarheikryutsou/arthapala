@@ -17,6 +17,9 @@ export default defineNuxtConfig({
       },
       meta: [
         { name: "description", content: "Custodial staking of Ethereum" }
+      ],
+      link: [
+        { rel: 'icon', type: "image/svg+xml", href: "/favicon.svg" }
       ]
     }
   },

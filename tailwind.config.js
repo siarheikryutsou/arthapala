@@ -7,7 +7,15 @@ export default {
     "./src/layouts/*.vue",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        brand: {
+          blue: {
+            primary: "#2777D4"
+          }
+        }
+      }
+    },
   },
   plugins: [],
 }
