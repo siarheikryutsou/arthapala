@@ -22,11 +22,13 @@ function goBack(): void {
         </div>
       </div>
     </header>
-    <main class="p-2 md:py-14 md:px-0">
+
+    <main>
       <div class="page-container">
         <NuxtPage />
       </div>
     </main>
+
     <footer class="flex justify-center mb-6">
       <FooterNav />
     </footer>

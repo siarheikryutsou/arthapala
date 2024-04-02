@@ -11,6 +11,14 @@
         background-position: top left, bottom -44px right -342px, top 108px right 99px;
     }
 
+    .bg-inner-sm {
+        background-position: top left, center;
+    }
+
+    .bg-inner-md {
+        background-position: top left, center left 110px;
+    }
+
     .list-style-marker {
         background: url("/images/main_list_marker.svg") no-repeat left center;
         padding-left: 15px;
@@ -28,6 +36,15 @@
     .inner-page-width {
         @apply max-w-[720px] mx-auto w-full;
     }
+
+    .bg-inner-footer-sm {
+        background-position: bottom -15px right -440px;
+
+    }
+
+    .bg-inner-footer-md {
+        background-position: bottom -30px right -345px;
+    }
 }
 
 html {
@@ -43,38 +60,47 @@ html {
 
             > #main-page {
                 @apply min-h-full flex flex-col flex-grow justify-between bg-sm md:bg-md;
-                background-image: url('/images/elephant.svg'), url('/images/bg_bl.svg'), url('/images/bg_bt.svg');
+                background-image: url('/images/elephant.svg'), url('/images/bg_br.svg'), url('/images/bg_tr.svg');
                 background-attachment: scroll;
                 background-repeat: no-repeat;
             }
 
             > #inner-page {
-                @apply min-h-full flex flex-col flex-grow justify-between;
+                @apply min-h-full flex flex-col flex-grow justify-between bg-inner-footer-sm md:bg-inner-footer-md;
+                background-image: url('/images/bg_br.svg');
+                background-repeat: no-repeat;
 
-                .page-container {
-                    @apply inner-page-width rounded-3xl bg-white px-4 py-12 md:p-12 space-y-8;
-                    h2 {
-                        @apply text-2xl font-bold mb-8;
-                    }
+                main {
+                    @apply p-2 md:py-14 md:px-0 bg-inner-sm md:bg-inner-md;
+                    background-image: url("/images/bg_tl.svg"), url('/images/bg_tr.svg');
+                    background-attachment: scroll;
+                    background-repeat: no-repeat;
 
-                    p {
-                        @apply my-6;
-                    }
+                    .page-container {
+                        @apply inner-page-width rounded-3xl bg-white px-4 py-12 md:p-12 space-y-8;
+                        h2 {
+                            @apply text-2xl font-bold mb-8;
+                        }
 
-                    section {
-                        &.warning {
-                            @apply p-10 rounded-3xl border-2 border-[#F2C629];
+                        p {
+                            @apply my-6;
+                        }
 
-                            h2 {
-                                @apply mb-2;
+                        section {
+                            &.warning {
+                                @apply p-10 rounded-3xl border-2 border-[#F2C629];
 
-                                &+p {
-                                    @apply mt-0;
+                                h2 {
+                                    @apply mb-2;
+
+                                    &+p {
+                                        @apply mt-0;
+                                    }
                                 }
-                            }
 
-                            p {
-                                @apply mb-0;
+                                p {
+                                    @apply mb-0;
+                                }
                             }
                         }
                     }
