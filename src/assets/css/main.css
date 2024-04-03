@@ -76,6 +76,7 @@ html {
                     background-size: 615px 713px;
                     z-index: -1;
                     transition: opacity 0.3s ease;
+                    min-height: 559px;
                     @apply opacity-100 md:opacity-100 mmdlg:opacity-20;
                 }
             }
