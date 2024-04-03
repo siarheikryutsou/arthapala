@@ -51,129 +51,123 @@ html {
     @apply w-full h-full;
     font-family: Inter, sans-serif;
     background: linear-gradient(to bottom, #9AF0FF, #53A2BE) fixed no-repeat;
+}
 
-    body {
-        @apply w-full h-full font-normal;
+html body {
+    @apply w-full h-full font-normal;
+}
 
-        #__nuxt {
-            @apply min-h-full flex flex-col;
+html body #__nuxt {
+    @apply min-h-full flex flex-col;
+}
 
-            > #main-page {
-                @apply min-h-full flex flex-col flex-grow justify-between bg-sm md:bg-md;
-                background-image: url('/images/bg_tl.svg'), url('/images/bg_br.svg'), url('/images/bg_tr.svg');
-                background-attachment: scroll;
-                background-repeat: no-repeat;
+html body #__nuxt > #main-page {
+    @apply min-h-full flex flex-col flex-grow justify-between bg-sm md:bg-md;
+    background-image: url('/images/bg_tl.svg'), url('/images/bg_br.svg'), url('/images/bg_tr.svg');
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+}
 
-                &::before {
-                    content: '';
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    right: 0;
-                    bottom: 0;
-                    background-image: url('/images/elephant.png');
-                    background-repeat: no-repeat;
-                    background-size: 615px 713px;
-                    z-index: -1;
-                    transition: opacity 0.3s ease;
-                    min-height: 559px;
-                    @apply opacity-100 md:opacity-100 mmdlg:opacity-20;
-                }
-            }
+html body #__nuxt > #main-page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/images/elephant.png');
+    background-repeat: no-repeat;
+    background-size: 615px 713px;
+    z-index: -1;
+    transition: opacity 0.3s ease;
+    min-height: 713px;
+    @apply opacity-100 md:opacity-100 mmdlg:opacity-20;
+}
 
-            > #inner-page {
-                @apply min-h-full flex flex-col flex-grow justify-between bg-inner-footer-sm md:bg-inner-footer-md;
-                background-image: url('/images/bg_br.svg');
-                background-repeat: no-repeat;
+html body #__nuxt > #inner-page {
+    @apply min-h-full flex flex-col flex-grow justify-between bg-inner-footer-sm md:bg-inner-footer-md;
+    background-image: url('/images/bg_br.svg');
+    background-repeat: no-repeat;
+}
 
-                main {
-                    @apply p-2 md:py-14 md:px-0 bg-inner-sm md:bg-inner-md;
-                    background-image: url("/images/bg_tl_inner.svg"), url('/images/bg_tr.svg');
-                    background-attachment: scroll;
-                    background-repeat: no-repeat;
+html body #__nuxt > #inner-page main {
+    @apply p-2 md:py-14 md:px-0 bg-inner-sm md:bg-inner-md;
+    background-image: url("/images/bg_tl_inner.svg"), url('/images/bg_tr.svg');
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+}
 
-                    .page-container {
-                        @apply inner-page-width rounded-3xl bg-white px-6 py-12 md:p-12 space-y-8;
-                        h2 {
-                            @apply text-2xl font-bold mb-8;
-                        }
+html body #__nuxt > #inner-page main .page-container {
+    @apply inner-page-width rounded-3xl bg-white px-6 py-12 md:p-12 space-y-8;
+}
 
-                        p {
-                            @apply my-6;
-                        }
+html body #__nuxt > #inner-page .page-container h2 {
+    @apply text-2xl font-bold mb-8;
+}
 
-                        section {
-                            &.warning {
-                                @apply p-10 rounded-3xl border-2 border-[#F2C629];
+html body #__nuxt > #inner-page .page-container p {
+    @apply my-6;
+}
 
-                                h2 {
-                                    @apply mb-2;
+html body #__nuxt > #inner-page .page-container section.warning {
+    @apply p-10 rounded-3xl border-2 border-[#F2C629];
+}
 
-                                    &+p {
-                                        @apply mt-0;
-                                    }
-                                }
+html body #__nuxt > #inner-page .page-container section.warning h2 {
+    @apply mb-2;
+}
 
-                                p {
-                                    @apply mb-0;
-                                }
-                            }
-                        }
-                    }
-                }
+html body #__nuxt > #inner-page .page-container section.warning h2+p {
+    @apply mt-0;
+}
 
-                header {
-                    background-image: url('/images/bg_inner_pattern.webp'), linear-gradient(to bottom, #388AEA, #1B6ECF);
-                    background-repeat: repeat, no-repeat;
-                    background-size: 1024px, auto;
-                }
-            }
+html body #__nuxt > #inner-page .page-container section.warning p {
+    @apply mb-0;
+}
 
-            main {
-                @apply flex-grow;
+html body #__nuxt > #inner-page header {
+    background-image: url('/images/bg_inner_pattern.webp'), linear-gradient(to bottom, #388AEA, #1B6ECF);
+    background-repeat: repeat, no-repeat;
+    background-size: 1024px, auto;
+}
 
-                .main-list {
-                    @apply italic text-[22px] font-thin text-brand-blue-primary;
+html body #__nuxt main {
+    @apply flex-grow;
+}
 
-                    li {
-                        @apply xl:list-style-marker;
+html body #__nuxt main .main-list {
+    @apply italic text-[22px] font-thin text-brand-blue-primary;
+}
 
-                        strong {
-                            @apply font-extrabold;
-                        }
+html body #__nuxt main .main-list li {
+    @apply xl:list-style-marker;
 
-                    }
-                }
-            }
+}
 
-            .nuxt-icon {
-                display: flex;
+html body #__nuxt main .main-list li strong {
+    @apply font-extrabold;
+}
 
-                svg {
-                    width: initial;
-                    height: initial;
-                    margin-bottom: initial;
-                    vertical-align: initial;
-                }
-            }
+body .nuxt-icon {
+    display: flex;
+}
 
-            header {
+body .nuxt-icon svg {
+    width: initial;
+    height: initial;
+    margin-bottom: initial;
+    vertical-align: initial;
+}
 
-            }
 
-            footer {
-                .footer-contacts-list {
-                    @apply flex flex-col gap-5;
+html body #__nuxt footer .footer-contacts-list {
+    @apply flex flex-col gap-5;
+}
 
-                    a {
-                        @apply flex gap-2 items-start;
+html body #__nuxt footer .footer-contacts-list a {
+    @apply flex gap-2 items-start;
+}
 
-                        svg {
-                            @apply -mt-0.5
-                        }
-                    }
-                }
-            }
-        }
-    }
+html body #__nuxt footer .footer-contacts-list a svg {
+    @apply mt-0.5
 }

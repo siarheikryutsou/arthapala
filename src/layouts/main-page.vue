@@ -23,7 +23,7 @@
       class="py-6 px-6 md:px-20 text-white text-xs flex flex-col xl:flex-row xl:justify-between xl:items-end space-y-5 w-full">
       <nav class="mx-auto md:mx-0">
         <ul class="footer-contacts-list">
-          <li class="">
+          <li>
             <a href="mailto:info@arthapala.vc" target="_blank" title="Contact us by email">
               <nuxt-icon filled name="mail" />
               <span>info@arthapala.vc</span>
