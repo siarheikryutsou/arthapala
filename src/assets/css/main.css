@@ -169,5 +169,5 @@ html body #__nuxt footer .footer-contacts-list a {
 }
 
 html body #__nuxt footer .footer-contacts-list a svg {
-    @apply mt-0.5
+    @apply -mt-0.5
 }
