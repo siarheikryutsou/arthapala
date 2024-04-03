@@ -4,11 +4,11 @@
 
 @layer base {
     .bg-sm {
-        background-position: top left, bottom -44px right -429px, center;
+        background-position: top -151px left -40px, bottom -44px right -429px, center;
     }
 
     .bg-md {
-        background-position: top left, bottom -44px right -342px, top 108px right 99px;
+        background-position: top -151px left -40px, bottom -44px right -342px, top 108px right 99px;
     }
 
     .bg-inner-sm {
@@ -60,9 +60,24 @@ html {
 
             > #main-page {
                 @apply min-h-full flex flex-col flex-grow justify-between bg-sm md:bg-md;
-                background-image: url('/images/elephant.svg'), url('/images/bg_br.svg'), url('/images/bg_tr.svg');
+                background-image: url('/images/bg_tl.svg'), url('/images/bg_br.svg'), url('/images/bg_tr.svg');
                 background-attachment: scroll;
                 background-repeat: no-repeat;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background-image: url('/images/elephant.png');
+                    background-repeat: no-repeat;
+                    background-size: 615px 713px;
+                    z-index: -1;
+                    transition: opacity 0.3s ease;
+                    @apply opacity-100 md:opacity-100 mmdlg:opacity-20;
+                }
             }
 
             > #inner-page {
@@ -72,7 +87,7 @@ html {
 
                 main {
                     @apply p-2 md:py-14 md:px-0 bg-inner-sm md:bg-inner-md;
-                    background-image: url("/images/bg_tl.svg"), url('/images/bg_tr.svg');
+                    background-image: url("/images/bg_tl_inner.svg"), url('/images/bg_tr.svg');
                     background-attachment: scroll;
                     background-repeat: no-repeat;
 

@@ -14,6 +14,10 @@ export default {
             primary: "#2777D4"
           }
         }
+      },
+
+      screens: {
+        mmdlg: {min: "769px", max: "920px"},
       }
     },
   },
