@@ -5,9 +5,9 @@
       <img class="md:hidden" src="/images/logo_mobile.svg" alt="Arthapala's logo" />
 
       <nav class="flex gap-6">
-        <!--      <a class="color-transition" href="https://x.com/" target="_blank" aria-label="Follow us on Twitter" title="Follow us on Twitter">
+              <a class="color-transition" href="https://twitter.com/Arthapala_vc" target="_blank" aria-label="Follow us on Twitter" title="Follow us on Twitter">
                 <nuxt-icon filled name="x" />
-              </a>-->
+              </a>
         <a class="color-transition" href="https://t.me/Arthapala" target="_blank" aria-label="Follow us on Telegram"
            title="Follow us on Telegram">
           <nuxt-icon filled name="tg" />
