@@ -16,7 +16,7 @@
         <nuxt-link to="/prohibited-countries">List of Prohibited Countries</nuxt-link>
       </li>
       <li>
-        <nuxt-link to="/impressum">Impressum</nuxt-link>
+        <nuxt-link to="/privacy-notice">Privacy Notice</nuxt-link>
       </li>
     </ul>
   </nav>

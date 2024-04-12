@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const pageTitle = useState("pageTitle");
-pageTitle.value = "Impressum";
+pageTitle.value = "Privacy Notice";
 
 useHead({
   title: "Arthapāla — " + pageTitle.value
@@ -10,12 +10,12 @@ useHead({
 
 <template>
   <section>
-    <h2>Updated: 13 March 2024</h2>
+    <h2>Arthapala offers customer specific blockchain solutions.</h2>
     <p>
-      <span>Telegram: <a href="https://t.me/Arthapala" class="!no-underline" target="_blank" title="Follow us on Telegram">@arthapala</a></span>
-      <br />
-      <span>Email: <a href="mailto:info@arthapala.vc" class="!no-underline" target="_blank" title="Contact us by email">info@arthapala.vc</a></span>
+      Custodial ETH staking as a service for companies and private customers.
     </p>
-    <p>Postal address: Antala Staška 1859/34, Krč, 140 00 Praha</p>
+    <p>No pooling of customer funds. High safety standards.</p>
+    <p>We operate according to European regulatory standards. All customers have to pass KYC/AML process during
+      registration.</p>
   </section>
 </template>
