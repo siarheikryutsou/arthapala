@@ -24,7 +24,7 @@
       <nav class="mx-auto md:mx-0">
         <ul class="footer-contacts-list">
           <li>
-            <a href="mailto:info@arthapala.vc" target="_blank" title="Contact us by email">
+            <a href="mailto:info@arthapala.vc?subject=Request contact at Arthapala blockchain services" target="_blank" title="Contact us by email">
               <nuxt-icon filled name="mail" />
               <span>info@arthapala.vc</span>
             </a>
