@@ -36,7 +36,8 @@ definePageMeta({
 
     <a
       class="mt-12 mb-14 py-2 px-8 rounded-full text-white text-lg font-extrabold border border-[#4D93E5] bg-gradient-to-b from-[#3E90F0] to-[#1B6ECF]"
-      href="#"
+      href="mailto:mailto:info@arthapala.vc"
+      target="_blank" title="Contact us by email"
       aria-label="">
       Get started
     </a>
