@@ -105,8 +105,24 @@ html body #__nuxt > #inner-page .page-container h2 {
     @apply text-2xl font-bold mb-8;
 }
 
+html body #__nuxt > #inner-page .page-container h3 {
+    @apply font-bold;
+}
+
+html body #__nuxt > #inner-page .page-container h3+p {
+    @apply mt-0;
+}
+
 html body #__nuxt > #inner-page .page-container p {
     @apply my-6;
+}
+
+html body #__nuxt > #inner-page .page-container ul {
+    @apply list-disc list-inside pl-4;
+}
+
+html body #__nuxt > #inner-page .page-container section a {
+    @apply text-brand-blue-primary underline;
 }
 
 html body #__nuxt > #inner-page .page-container section.warning {
@@ -114,14 +130,14 @@ html body #__nuxt > #inner-page .page-container section.warning {
 }
 
 html body #__nuxt > #inner-page .page-container section.warning h2 {
-    @apply mb-2;
+    @apply mb-2 text-xl;
 }
 
 html body #__nuxt > #inner-page .page-container section.warning h2+p {
     @apply mt-0;
 }
 
-html body #__nuxt > #inner-page .page-container section.warning p {
+html body #__nuxt > #inner-page .page-container section.warning p:last-child {
     @apply mb-0;
 }
 
