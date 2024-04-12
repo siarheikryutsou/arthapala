@@ -9,7 +9,7 @@ useHead({
 
 <template>
   <section>
-    <h2>Updated: 13 March 2024</h2>
+    <h2>Updated: 14 April 2024</h2>
     <p>This document summarizes the principal risks associated with the use of ETH staking and related cryptoasset
       custodial management services and the general risks associated with the ownership and holding of cryptoassets. We
       recommend that you read this information carefully before entering into a contract and using our services.

@@ -10,7 +10,7 @@ useHead({
 
 <template>
   <section>
-    <h2>Updated: 13 March 2024</h2>
+    <h2>Updated: 14 April 2024</h2>
     <p>These Terms constitute a legally binding agreement between you (“you” or “your”) and Arthapala (“Arthapala”, “we”, “our” or “us”). The Terms govern your use of the Arthapala Services made available to you on or through the Platform or otherwise. Arthapala Services may be provided by Arthapala or, if specified in these Terms, any Product Terms or any additional terms, by any Arthapala Affiliate.</p>
     <p>By registering for an Arthapala Account, accessing the Platform and/or using the Arthapala Services, you agree that you have read, understood and accepted these Terms, together with any additional documents or terms referred to in these Terms. You acknowledge and agree that you will be bound by and will comply with these Terms, as updated and amended from time to time.</p>
     <p>If you do not understand and accept these Terms in their entirety, you should not register for an Arthapala Account or access or use the Platform or any Arthapala Service.</p>

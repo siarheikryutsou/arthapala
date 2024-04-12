@@ -10,7 +10,7 @@ useHead({
 
 <template>
   <section>
-    <h2>Updated: 13 March 2024</h2>
+    <h2>Updated: 14 April 2024</h2>
     <p>The below Countries, and such other locations as designated by Binance from time to time, form the List of Prohibited Countries as described in Terms of Use</p>
     <ul>
       <li>Canada</li>
