@@ -34,7 +34,7 @@
     }
 
     .inner-page-width {
-        @apply max-w-[720px] mx-auto w-full;
+        @apply max-w-[816px] mx-auto w-full;
     }
 
     .bg-inner-footer-sm {

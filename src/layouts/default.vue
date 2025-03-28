@@ -25,9 +25,9 @@ function goBack(): void {
     </header>
 
     <main>
-      <div class="page-container">
+      <article class="page-container">
         <NuxtPage />
-      </div>
+      </article>
     </main>
 
     <footer class="flex justify-center mb-6">
