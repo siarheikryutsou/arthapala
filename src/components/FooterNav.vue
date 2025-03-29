@@ -18,6 +18,9 @@
       <li>
         <nuxt-link to="/privacy-notice">Privacy Notice</nuxt-link>
       </li>
+      <li>
+        <nuxt-link to="/our-team">Our Team</nuxt-link>
+      </li>
     </ul>
   </nav>
 </template>

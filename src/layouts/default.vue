@@ -9,15 +9,15 @@ function goBack(): void {
 <template>
   <div id="inner-page">
 
-    <header class="pt-14 pb-6 px-7 md:px-0">
+    <header class="pt-14 pb-6 px-7 lg:px-0">
       <div class="inner-page-width">
         <nuxt-link to="/" class="contents">
-          <img class="hidden md:block mb-2" src="/images/logo_mobile.svg" alt="Arthapala's logo" />
-          <img class="block -ml-8 -mt-14 mb-3 md:hidden" src="/images/logo_header_mobile.svg" alt="Arthapala's logo" />
+          <img class="hidden lg:block mb-2" src="/images/logo_mobile.svg" alt="Arthapala's logo" />
+          <img class="block -ml-8 -mt-14 mb-3 lg:hidden" src="/images/logo_header_mobile.svg" alt="Arthapala's logo" />
         </nuxt-link>
         <div class="flex">
           <button @click="goBack">
-            <nuxt-icon class="mr-8 md:mr-0 md:-mx-12" name="back" filled />
+            <nuxt-icon class="mr-8 lg:mr-0 lg:-mx-12" name="back" filled />
           </button>
           <h1 class="text-4xl text-white font-medium">{{ pageTitle }}</h1>
         </div>
